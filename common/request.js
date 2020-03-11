@@ -7,14 +7,27 @@ import uniRequest from 'uni-request';
 // 判断请求环境
 if(process.env.NODE_ENV === 'development'){
     // 开发环境
-    // uniRequest.defaults.baseURL = 'http://www.qfl168.cn/'
-    uniRequest.defaults.baseURL = '/qfl/'
+   // uniRequest.defaults.baseURL = 'http://www.qfl168.cn/'
+   // 生产环境
+   // #ifdef H5
+   uniRequest.defaults.baseURL = '/qfl/'
+   // #endif
+   // #ifdef APP-PLUS
+   uniRequest.defaults.baseURL = 'http://d30013n639.wicp.vip'
+   // #endif
 }else{
     // 生产环境
-    uniRequest.defaults.baseURL = '/qfl/'
+	// #ifdef H5
+	uniRequest.defaults.baseURL = '/qfl/'
+	// #endif
+	// #ifdef APP-PLUS
+	uniRequest.defaults.baseURL = 'http://d30013n639.wicp.vip'
+	// #endif
 }
+// 跨域请求设置
+uniRequest.defaults.withCredentials = true;
 
-// 请求拦截
+// 请求拦截	
 uniRequest.interceptors.request.use(
     request => {
 		// 所有请求在请求发送之前获取本地token,带上token

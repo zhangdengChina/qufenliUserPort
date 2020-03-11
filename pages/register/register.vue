@@ -35,6 +35,9 @@
 				</view>
 				<!-- <text>忘记密码</text> -->
 			</view>
+			<view @tap="gologinPage" class="gologin" style="textAlign: right;padding: 30rpx;fontSize: 30rpx;color: #FF5904;">
+				已有账号，立即登录
+			</view>
 		</view>
 		<button class="login-content-btn" :disabled="btnState" :class="btnState?'btnState':''" @tap="goIndex">注册</button>
 		<!-- 提示文本 -->
@@ -185,7 +188,7 @@
 					"PHONE":this.phone,
 					"code":this.testCode,
 					"PASSWORD":this.password1,
-					"openId":""
+					"openId":getApp().globalData.openid
 				}
 				register(obj).then(res=>{
 					console.log(res)
@@ -210,6 +213,11 @@
 							title:'验证码超时！',
 							icon:'none'
 						})
+					}else if(res.returnMsg.status=='03'){
+						uni.showToast({
+							title:'此账号已注册,前往登录！',
+							icon:'none'
+						})
 					}
 				}).catch(err=>{
 					uni.showToast({
@@ -225,6 +233,12 @@
 				// 		})
 				// 	}
 				// })
+			},
+			// 前往登录
+			gologinPage(){
+				uni.reLaunch({
+					url:'../login/login'
+				})
 			}
 		},
 		components:{

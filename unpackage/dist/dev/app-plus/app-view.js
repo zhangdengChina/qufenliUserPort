@@ -2267,6 +2267,25 @@ var render = function() {
               )
             ],
             1
+          ),
+          _c(
+            "v-uni-view",
+            {
+              staticClass: _vm._$g(23, "sc"),
+              staticStyle: {
+                textAlign: "right",
+                padding: "30rpx",
+                fontSize: "30rpx",
+                color: "#FF5904"
+              },
+              attrs: { _i: 23 },
+              on: {
+                click: function($event) {
+                  return _vm.$handleViewEvent($event)
+                }
+              }
+            },
+            [_vm._v("\n\t\t\t已有账号，立即登录\n\t\t")]
           )
         ],
         1
@@ -2274,9 +2293,9 @@ var render = function() {
       _c(
         "v-uni-button",
         {
-          staticClass: _vm._$g(23, "sc"),
-          class: _vm._$g(23, "c"),
-          attrs: { disabled: _vm._$g(23, "a-disabled"), _i: 23 },
+          staticClass: _vm._$g(24, "sc"),
+          class: _vm._$g(24, "c"),
+          attrs: { disabled: _vm._$g(24, "a-disabled"), _i: 24 },
           on: {
             click: function($event) {
               return _vm.$handleViewEvent($event)
@@ -2287,7 +2306,7 @@ var render = function() {
       ),
       _c(
         "v-uni-view",
-        { staticClass: _vm._$g(24, "sc"), attrs: { _i: 24 } },
+        { staticClass: _vm._$g(25, "sc"), attrs: { _i: 25 } },
         [
           _vm._v(
             "\n\t\t根据国家网络实名的相关规定，自2017年10月1日起，\n\t\t您需要绑定手机才能享受正常服务。\n\t\t"
@@ -2296,7 +2315,7 @@ var render = function() {
             "v-uni-view",
             {
               staticStyle: { "text-align": "center", "margin-top": "30rpx" },
-              attrs: { _i: 25 }
+              attrs: { _i: 26 }
             },
             [
               _vm._v("\n\t\t\t登录或注册即代表已同意\n\t\t\t"),
@@ -2304,7 +2323,7 @@ var render = function() {
                 "v-uni-navigator",
                 {
                   staticStyle: { color: "#FF5904", display: "inline-block" },
-                  attrs: { url: "../userAgreement/userAgreement", _i: 26 }
+                  attrs: { url: "../userAgreement/userAgreement", _i: 27 }
                 },
                 [_vm._v("《阅读用户协议》")]
               )
@@ -20705,6 +20724,11 @@ var render = function() {
                           placeholder: "输入金额",
                           "placeholder-style": "fontSize:28rpx",
                           _i: 8
+                        },
+                        on: {
+                          input: function($event) {
+                            return _vm.$handleViewEvent($event)
+                          }
                         }
                       })
                     ],
@@ -20818,21 +20842,33 @@ var render = function() {
           ),
           _c(
             "v-uni-view",
-            {
-              staticClass: _vm._$g(23, "sc"),
-              attrs: { _i: 23 },
-              on: {
-                click: function($event) {
-                  return _vm.$handleViewEvent($event)
-                }
-              }
-            },
+            { staticClass: _vm._$g(23, "sc"), attrs: { _i: 23 } },
             [
-              _c("v-uni-text", { attrs: { _i: 24 } }, [_vm._v("选择付款方式")]),
-              _c("v-uni-text", {
-                staticClass: _vm._$g(25, "sc"),
-                attrs: { _i: 25 }
-              })
+              _c("v-uni-text", { attrs: { _i: 24 } }, [
+                _vm._v("应付：" + _vm._$g(24, "t0") + "元")
+              ]),
+              _c(
+                "v-uni-view",
+                { staticClass: _vm._$g(25, "sc"), attrs: { _i: 25 } },
+                [
+                  _c("v-uni-text", { attrs: { _i: 26 } }, [
+                    _vm._v("实付：" + _vm._$g(26, "t0") + "元")
+                  ]),
+                  _c(
+                    "v-uni-view",
+                    {
+                      attrs: { _i: 27 },
+                      on: {
+                        click: function($event) {
+                          return _vm.$handleViewEvent($event)
+                        }
+                      }
+                    },
+                    [_vm._v("\n\t\t\t\t\t支付\n\t\t\t\t")]
+                  )
+                ],
+                1
+              )
             ],
             1
           )
@@ -20842,14 +20878,14 @@ var render = function() {
       _c(
         "v-uni-view",
         {
-          staticClass: _vm._$g(26, "sc"),
-          class: _vm._$g(26, "c"),
-          attrs: { _i: 26 }
+          staticClass: _vm._$g(28, "sc"),
+          class: _vm._$g(28, "c"),
+          attrs: { _i: 28 }
         },
         [
           _c("v-uni-view", {
-            staticClass: _vm._$g(27, "sc"),
-            attrs: { _i: 27 },
+            staticClass: _vm._$g(29, "sc"),
+            attrs: { _i: 29 },
             on: {
               click: function($event) {
                 return _vm.$handleViewEvent($event)
@@ -20858,16 +20894,16 @@ var render = function() {
           }),
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(28, "sc"), attrs: { _i: 28 } },
+            { staticClass: _vm._$g(30, "sc"), attrs: { _i: 30 } },
             [
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(29, "sc"), attrs: { _i: 29 } },
+                { staticClass: _vm._$g(31, "sc"), attrs: { _i: 31 } },
                 [
                   _vm._v("\n\t\t\t\t优惠详情\n\t\t\t\t"),
                   _c("v-uni-text", {
-                    staticClass: _vm._$g(30, "sc"),
-                    attrs: { _i: 30 },
+                    staticClass: _vm._$g(32, "sc"),
+                    attrs: { _i: 32 },
                     on: {
                       click: function($event) {
                         return _vm.$handleViewEvent($event)
@@ -20879,17 +20915,17 @@ var render = function() {
               ),
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(31, "sc"), attrs: { _i: 31 } },
+                { staticClass: _vm._$g(33, "sc"), attrs: { _i: 33 } },
                 [
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(32, "sc"), attrs: { _i: 32 } },
+                    { staticClass: _vm._$g(34, "sc"), attrs: { _i: 34 } },
                     [
                       _c(
                         "v-uni-label",
                         {
-                          staticClass: _vm._$g(33, "sc"),
-                          attrs: { _i: 33 },
+                          staticClass: _vm._$g(35, "sc"),
+                          attrs: { _i: 35 },
                           on: {
                             click: function($event) {
                               return _vm.$handleViewEvent($event)
@@ -20900,11 +20936,11 @@ var render = function() {
                           _c("v-uni-radio", {
                             attrs: {
                               value: "",
-                              checked: _vm._$g(34, "a-checked"),
-                              _i: 34
+                              checked: _vm._$g(36, "a-checked"),
+                              _i: 36
                             }
                           }),
-                          _c("v-uni-text", { attrs: { _i: 35 } }, [
+                          _c("v-uni-text", { attrs: { _i: 37 } }, [
                             _vm._v("不使用优惠券")
                           ])
                         ],
@@ -20913,49 +20949,49 @@ var render = function() {
                     ],
                     1
                   ),
-                  _vm._l(_vm._$g(36, "f"), function(item, $10, $20, $30) {
+                  _vm._l(_vm._$g(38, "f"), function(item, $10, $20, $30) {
                     return _c(
                       "v-uni-view",
                       {
                         key: item,
-                        staticClass: _vm._$g("36-" + $30, "sc"),
-                        attrs: { _i: "36-" + $30 }
+                        staticClass: _vm._$g("38-" + $30, "sc"),
+                        attrs: { _i: "38-" + $30 }
                       },
                       [
                         _c(
                           "v-uni-view",
                           {
-                            staticClass: _vm._$g("37-" + $30, "sc"),
-                            attrs: { _i: "37-" + $30 }
+                            staticClass: _vm._$g("39-" + $30, "sc"),
+                            attrs: { _i: "39-" + $30 }
                           },
                           [
                             _c(
                               "v-uni-view",
                               {
-                                staticClass: _vm._$g("38-" + $30, "sc"),
-                                attrs: { _i: "38-" + $30 }
+                                staticClass: _vm._$g("40-" + $30, "sc"),
+                                attrs: { _i: "40-" + $30 }
                               },
                               [
                                 _c(
                                   "v-uni-view",
                                   {
-                                    staticClass: _vm._$g("39-" + $30, "sc"),
-                                    attrs: { _i: "39-" + $30 }
+                                    staticClass: _vm._$g("41-" + $30, "sc"),
+                                    attrs: { _i: "41-" + $30 }
                                   },
                                   [
                                     _c(
                                       "v-uni-text",
-                                      { attrs: { _i: "40-" + $30 } },
+                                      { attrs: { _i: "42-" + $30 } },
                                       [_vm._v("￥")]
                                     ),
                                     _c(
                                       "v-uni-text",
-                                      { attrs: { _i: "41-" + $30 } },
-                                      [_vm._v(_vm._$g("41-" + $30, "t0"))]
+                                      { attrs: { _i: "43-" + $30 } },
+                                      [_vm._v(_vm._$g("43-" + $30, "t0"))]
                                     ),
                                     _c(
                                       "v-uni-view",
-                                      { attrs: { _i: "42-" + $30 } },
+                                      { attrs: { _i: "44-" + $30 } },
                                       [
                                         _vm._v(
                                           "\n\t\t\t\t\t\t\t\t\t抵扣券\n\t\t\t\t\t\t\t\t"
@@ -20971,27 +21007,27 @@ var render = function() {
                             _c(
                               "v-uni-view",
                               {
-                                staticClass: _vm._$g("43-" + $30, "sc"),
-                                attrs: { _i: "43-" + $30 }
+                                staticClass: _vm._$g("45-" + $30, "sc"),
+                                attrs: { _i: "45-" + $30 }
                               },
                               [
                                 _c(
                                   "v-uni-text",
-                                  { attrs: { _i: "44-" + $30 } },
-                                  [_vm._v(_vm._$g("44-" + $30, "t0"))]
+                                  { attrs: { _i: "46-" + $30 } },
+                                  [_vm._v(_vm._$g("46-" + $30, "t0"))]
                                 ),
                                 _c(
                                   "v-uni-view",
-                                  { attrs: { _i: "45-" + $30 } },
+                                  { attrs: { _i: "47-" + $30 } },
                                   [
                                     _vm._v(
-                                      "有效期至：" + _vm._$g("45-" + $30, "t0")
+                                      "有效期至：" + _vm._$g("47-" + $30, "t0")
                                     )
                                   ]
                                 ),
                                 _c(
                                   "v-uni-text",
-                                  { attrs: { _i: "46-" + $30 } },
+                                  { attrs: { _i: "48-" + $30 } },
                                   [_vm._v("使用规则")]
                                 )
                               ],
@@ -21003,8 +21039,8 @@ var render = function() {
                         _c(
                           "v-uni-view",
                           {
-                            staticClass: _vm._$g("47-" + $30, "sc"),
-                            attrs: { _i: "47-" + $30 },
+                            staticClass: _vm._$g("49-" + $30, "sc"),
+                            attrs: { _i: "49-" + $30 },
                             on: {
                               click: function($event) {
                                 return _vm.$handleViewEvent($event)
@@ -21029,22 +21065,22 @@ var render = function() {
       _c(
         "v-uni-view",
         {
-          staticClass: _vm._$g(48, "sc"),
-          class: _vm._$g(48, "c"),
-          attrs: { _i: 48 }
+          staticClass: _vm._$g(50, "sc"),
+          class: _vm._$g(50, "c"),
+          attrs: { _i: 50 }
         },
         [
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(49, "sc"), attrs: { _i: 49 } },
+            { staticClass: _vm._$g(51, "sc"), attrs: { _i: 51 } },
             [
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(50, "sc"), attrs: { _i: 50 } },
+                { staticClass: _vm._$g(52, "sc"), attrs: { _i: 52 } },
                 [
                   _c("v-uni-text", {
-                    staticClass: _vm._$g(51, "sc"),
-                    attrs: { _i: 51 },
+                    staticClass: _vm._$g(53, "sc"),
+                    attrs: { _i: 53 },
                     on: {
                       click: function($event) {
                         return _vm.$handleViewEvent($event)
@@ -21058,8 +21094,8 @@ var render = function() {
               _c(
                 "v-uni-view",
                 {
-                  staticClass: _vm._$g(52, "sc"),
-                  attrs: { _i: 52 },
+                  staticClass: _vm._$g(54, "sc"),
+                  attrs: { _i: 54 },
                   on: {
                     click: function($event) {
                       return _vm.$handleViewEvent($event)
@@ -21069,12 +21105,12 @@ var render = function() {
                 [
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(53, "sc"), attrs: { _i: 53 } },
+                    { staticClass: _vm._$g(55, "sc"), attrs: { _i: 55 } },
                     [
                       _c("v-uni-text", {
-                        staticClass: _vm._$g(54, "sc"),
+                        staticClass: _vm._$g(56, "sc"),
                         staticStyle: { color: "#FF5A32" },
-                        attrs: { _i: 54 }
+                        attrs: { _i: 56 }
                       }),
                       _vm._v("\n\t\t\t\t\t余额支付\n\t\t\t\t")
                     ],
@@ -21082,11 +21118,11 @@ var render = function() {
                   ),
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(55, "sc"), attrs: { _i: 55 } },
+                    { staticClass: _vm._$g(57, "sc"), attrs: { _i: 57 } },
                     [
                       _c("v-uni-text", {
-                        staticClass: _vm._$g(56, "sc"),
-                        attrs: { _i: 56 }
+                        staticClass: _vm._$g(58, "sc"),
+                        attrs: { _i: 58 }
                       })
                     ],
                     1
@@ -21097,8 +21133,8 @@ var render = function() {
               _c(
                 "v-uni-view",
                 {
-                  staticClass: _vm._$g(57, "sc"),
-                  attrs: { _i: 57 },
+                  staticClass: _vm._$g(59, "sc"),
+                  attrs: { _i: 59 },
                   on: {
                     click: function($event) {
                       return _vm.$handleViewEvent($event)
@@ -21108,12 +21144,12 @@ var render = function() {
                 [
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(58, "sc"), attrs: { _i: 58 } },
+                    { staticClass: _vm._$g(60, "sc"), attrs: { _i: 60 } },
                     [
                       _c("v-uni-text", {
-                        staticClass: _vm._$g(59, "sc"),
+                        staticClass: _vm._$g(61, "sc"),
                         staticStyle: { color: "#09BB07" },
-                        attrs: { _i: 59 }
+                        attrs: { _i: 61 }
                       }),
                       _vm._v("\n\t\t\t\t\t微信支付\n\t\t\t\t")
                     ],
@@ -21121,11 +21157,11 @@ var render = function() {
                   ),
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(60, "sc"), attrs: { _i: 60 } },
+                    { staticClass: _vm._$g(62, "sc"), attrs: { _i: 62 } },
                     [
                       _c("v-uni-text", {
-                        staticClass: _vm._$g(61, "sc"),
-                        attrs: { _i: 61 }
+                        staticClass: _vm._$g(63, "sc"),
+                        attrs: { _i: 63 }
                       })
                     ],
                     1
@@ -21136,8 +21172,8 @@ var render = function() {
               _c(
                 "v-uni-view",
                 {
-                  staticClass: _vm._$g(62, "sc"),
-                  attrs: { _i: 62 },
+                  staticClass: _vm._$g(64, "sc"),
+                  attrs: { _i: 64 },
                   on: {
                     click: function($event) {
                       return _vm.$handleViewEvent($event)
@@ -21147,12 +21183,12 @@ var render = function() {
                 [
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(63, "sc"), attrs: { _i: 63 } },
+                    { staticClass: _vm._$g(65, "sc"), attrs: { _i: 65 } },
                     [
                       _c("v-uni-text", {
-                        staticClass: _vm._$g(64, "sc"),
+                        staticClass: _vm._$g(66, "sc"),
                         staticStyle: { color: "#06B4FD" },
-                        attrs: { _i: 64 }
+                        attrs: { _i: 66 }
                       }),
                       _vm._v("\n\t\t\t\t\t支付宝支付\n\t\t\t\t")
                     ],
@@ -21160,11 +21196,11 @@ var render = function() {
                   ),
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(65, "sc"), attrs: { _i: 65 } },
+                    { staticClass: _vm._$g(67, "sc"), attrs: { _i: 67 } },
                     [
                       _c("v-uni-text", {
-                        staticClass: _vm._$g(66, "sc"),
-                        attrs: { _i: 66 }
+                        staticClass: _vm._$g(68, "sc"),
+                        attrs: { _i: 68 }
                       })
                     ],
                     1
@@ -21175,8 +21211,8 @@ var render = function() {
               _c(
                 "v-uni-view",
                 {
-                  staticClass: _vm._$g(67, "sc"),
-                  attrs: { _i: 67 },
+                  staticClass: _vm._$g(69, "sc"),
+                  attrs: { _i: 69 },
                   on: {
                     click: function($event) {
                       return _vm.$handleViewEvent($event)
@@ -21186,12 +21222,12 @@ var render = function() {
                 [
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(68, "sc"), attrs: { _i: 68 } },
+                    { staticClass: _vm._$g(70, "sc"), attrs: { _i: 70 } },
                     [
                       _c("v-uni-text", {
-                        staticClass: _vm._$g(69, "sc"),
+                        staticClass: _vm._$g(71, "sc"),
                         staticStyle: { color: "#F7601C" },
-                        attrs: { _i: 69 }
+                        attrs: { _i: 71 }
                       }),
                       _vm._v("\n\t\t\t\t\t银行卡支付\n\t\t\t\t")
                     ],
@@ -21199,11 +21235,11 @@ var render = function() {
                   ),
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(70, "sc"), attrs: { _i: 70 } },
+                    { staticClass: _vm._$g(72, "sc"), attrs: { _i: 72 } },
                     [
                       _c("v-uni-text", {
-                        staticClass: _vm._$g(71, "sc"),
-                        attrs: { _i: 71 }
+                        staticClass: _vm._$g(73, "sc"),
+                        attrs: { _i: 73 }
                       })
                     ],
                     1
@@ -21220,22 +21256,22 @@ var render = function() {
       _c(
         "v-uni-view",
         {
-          staticClass: _vm._$g(72, "sc"),
-          class: _vm._$g(72, "c"),
-          attrs: { _i: 72 }
+          staticClass: _vm._$g(74, "sc"),
+          class: _vm._$g(74, "c"),
+          attrs: { _i: 74 }
         },
         [
           _c(
             "v-uni-view",
-            { staticClass: _vm._$g(73, "sc"), attrs: { _i: 73 } },
+            { staticClass: _vm._$g(75, "sc"), attrs: { _i: 75 } },
             [
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(74, "sc"), attrs: { _i: 74 } },
+                { staticClass: _vm._$g(76, "sc"), attrs: { _i: 76 } },
                 [
                   _c("v-uni-text", {
-                    staticClass: _vm._$g(75, "sc"),
-                    attrs: { _i: 75 },
+                    staticClass: _vm._$g(77, "sc"),
+                    attrs: { _i: 77 },
                     on: {
                       click: function($event) {
                         return _vm.$handleViewEvent($event)
@@ -21248,12 +21284,12 @@ var render = function() {
               ),
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(76, "sc"), attrs: { _i: 76 } },
+                { staticClass: _vm._$g(78, "sc"), attrs: { _i: 78 } },
                 [
-                  _c("v-uni-text", { attrs: { _i: 77 } }, [
+                  _c("v-uni-text", { attrs: { _i: 79 } }, [
                     _vm._v("向某某商家支付")
                   ]),
-                  _c("v-uni-view", { attrs: { _i: 78 } }, [
+                  _c("v-uni-view", { attrs: { _i: 80 } }, [
                     _vm._v("\n\t\t\t\t\t￥9.9\n\t\t\t\t")
                   ])
                 ],
@@ -21261,22 +21297,22 @@ var render = function() {
               ),
               _c(
                 "v-uni-view",
-                { staticClass: _vm._$g(79, "sc"), attrs: { _i: 79 } },
+                { staticClass: _vm._$g(81, "sc"), attrs: { _i: 81 } },
                 [
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(80, "sc"), attrs: { _i: 80 } },
+                    { staticClass: _vm._$g(82, "sc"), attrs: { _i: 82 } },
                     [
                       _c(
                         "v-uni-view",
-                        { staticClass: _vm._$g(81, "sc"), attrs: { _i: 81 } },
+                        { staticClass: _vm._$g(83, "sc"), attrs: { _i: 83 } },
                         [_vm._v("\n\t\t\t\t\t\t支付方式\n\t\t\t\t\t")]
                       ),
                       _c(
                         "v-uni-view",
                         {
-                          staticClass: _vm._$g(82, "sc"),
-                          attrs: { _i: 82 },
+                          staticClass: _vm._$g(84, "sc"),
+                          attrs: { _i: 84 },
                           on: {
                             click: function($event) {
                               return _vm.$handleViewEvent($event)
@@ -21284,10 +21320,10 @@ var render = function() {
                           }
                         },
                         [
-                          _vm._v(_vm._$g(82, "t0")),
+                          _vm._v(_vm._$g(84, "t0")),
                           _c("v-uni-text", {
-                            staticClass: _vm._$g(83, "sc"),
-                            attrs: { _i: 83 }
+                            staticClass: _vm._$g(85, "sc"),
+                            attrs: { _i: 85 }
                           })
                         ],
                         1
@@ -21297,16 +21333,16 @@ var render = function() {
                   ),
                   _c(
                     "v-uni-view",
-                    { staticClass: _vm._$g(84, "sc"), attrs: { _i: 84 } },
+                    { staticClass: _vm._$g(86, "sc"), attrs: { _i: 86 } },
                     [
                       _c("v-uni-input", {
-                        staticClass: _vm._$g(85, "sc"),
+                        staticClass: _vm._$g(87, "sc"),
                         attrs: {
-                          value: _vm._$g(85, "a-value"),
+                          value: _vm._$g(87, "a-value"),
                           type: "number",
-                          focus: _vm._$g(85, "a-focus"),
-                          maxlength: _vm._$g(85, "a-maxlength"),
-                          _i: 85
+                          focus: _vm._$g(87, "a-focus"),
+                          maxlength: _vm._$g(87, "a-maxlength"),
+                          _i: 87
                         },
                         on: {
                           input: function($event) {
@@ -21316,141 +21352,141 @@ var render = function() {
                       }),
                       _c(
                         "v-uni-view",
-                        { class: _vm._$g(86, "c"), attrs: { _i: 86 } },
+                        { class: _vm._$g(88, "c"), attrs: { _i: 88 } },
                         [
                           _c("v-uni-view", {
-                            staticClass: _vm._$g(87, "sc"),
-                            attrs: { _i: 87 }
+                            staticClass: _vm._$g(89, "sc"),
+                            attrs: { _i: 89 }
                           }),
-                          _vm._$g(88, "i")
+                          _vm._$g(90, "i")
                             ? [
                                 _c(
                                   "v-uni-text",
                                   {
-                                    staticClass: _vm._$g(89, "sc"),
-                                    attrs: { _i: 89 }
+                                    staticClass: _vm._$g(91, "sc"),
+                                    attrs: { _i: 91 }
                                   },
                                   [_vm._v(".")]
                                 )
                               ]
-                            : [_vm._v(_vm._$g(90, "t0"))]
+                            : [_vm._v(_vm._$g(92, "t0"))]
                         ],
                         2
                       ),
                       _c(
                         "v-uni-view",
-                        { class: _vm._$g(91, "c"), attrs: { _i: 91 } },
+                        { class: _vm._$g(93, "c"), attrs: { _i: 93 } },
                         [
                           _c("v-uni-view", {
-                            staticClass: _vm._$g(92, "sc"),
-                            attrs: { _i: 92 }
+                            staticClass: _vm._$g(94, "sc"),
+                            attrs: { _i: 94 }
                           }),
-                          _vm._$g(93, "i")
+                          _vm._$g(95, "i")
                             ? [
                                 _c(
                                   "v-uni-text",
                                   {
-                                    staticClass: _vm._$g(94, "sc"),
-                                    attrs: { _i: 94 }
+                                    staticClass: _vm._$g(96, "sc"),
+                                    attrs: { _i: 96 }
                                   },
                                   [_vm._v(".")]
                                 )
                               ]
-                            : [_vm._v(_vm._$g(95, "t0"))]
+                            : [_vm._v(_vm._$g(97, "t0"))]
                         ],
                         2
                       ),
                       _c(
                         "v-uni-view",
-                        { class: _vm._$g(96, "c"), attrs: { _i: 96 } },
+                        { class: _vm._$g(98, "c"), attrs: { _i: 98 } },
                         [
                           _c("v-uni-view", {
-                            staticClass: _vm._$g(97, "sc"),
-                            attrs: { _i: 97 }
+                            staticClass: _vm._$g(99, "sc"),
+                            attrs: { _i: 99 }
                           }),
-                          _vm._$g(98, "i")
+                          _vm._$g(100, "i")
                             ? [
                                 _c(
                                   "v-uni-text",
                                   {
-                                    staticClass: _vm._$g(99, "sc"),
-                                    attrs: { _i: 99 }
+                                    staticClass: _vm._$g(101, "sc"),
+                                    attrs: { _i: 101 }
                                   },
                                   [_vm._v(".")]
                                 )
                               ]
-                            : [_vm._v(_vm._$g(100, "t0"))]
+                            : [_vm._v(_vm._$g(102, "t0"))]
                         ],
                         2
                       ),
                       _c(
                         "v-uni-view",
-                        { class: _vm._$g(101, "c"), attrs: { _i: 101 } },
+                        { class: _vm._$g(103, "c"), attrs: { _i: 103 } },
                         [
                           _c("v-uni-view", {
-                            staticClass: _vm._$g(102, "sc"),
-                            attrs: { _i: 102 }
+                            staticClass: _vm._$g(104, "sc"),
+                            attrs: { _i: 104 }
                           }),
-                          _vm._$g(103, "i")
+                          _vm._$g(105, "i")
                             ? [
                                 _c(
                                   "v-uni-text",
                                   {
-                                    staticClass: _vm._$g(104, "sc"),
-                                    attrs: { _i: 104 }
+                                    staticClass: _vm._$g(106, "sc"),
+                                    attrs: { _i: 106 }
                                   },
                                   [_vm._v(".")]
                                 )
                               ]
-                            : [_vm._v(_vm._$g(105, "t0"))]
+                            : [_vm._v(_vm._$g(107, "t0"))]
                         ],
                         2
                       ),
-                      _vm._$g(106, "i")
+                      _vm._$g(108, "i")
                         ? [
                             _c(
                               "v-uni-view",
-                              { class: _vm._$g(107, "c"), attrs: { _i: 107 } },
+                              { class: _vm._$g(109, "c"), attrs: { _i: 109 } },
                               [
                                 _c("v-uni-view", {
-                                  staticClass: _vm._$g(108, "sc"),
-                                  attrs: { _i: 108 }
+                                  staticClass: _vm._$g(110, "sc"),
+                                  attrs: { _i: 110 }
                                 }),
-                                _vm._$g(109, "i")
+                                _vm._$g(111, "i")
                                   ? [
                                       _c(
                                         "v-uni-text",
                                         {
-                                          staticClass: _vm._$g(110, "sc"),
-                                          attrs: { _i: 110 }
+                                          staticClass: _vm._$g(112, "sc"),
+                                          attrs: { _i: 112 }
                                         },
                                         [_vm._v(".")]
                                       )
                                     ]
-                                  : [_vm._v(_vm._$g(111, "t0"))]
+                                  : [_vm._v(_vm._$g(113, "t0"))]
                               ],
                               2
                             ),
                             _c(
                               "v-uni-view",
-                              { class: _vm._$g(112, "c"), attrs: { _i: 112 } },
+                              { class: _vm._$g(114, "c"), attrs: { _i: 114 } },
                               [
                                 _c("v-uni-view", {
-                                  staticClass: _vm._$g(113, "sc"),
-                                  attrs: { _i: 113 }
+                                  staticClass: _vm._$g(115, "sc"),
+                                  attrs: { _i: 115 }
                                 }),
-                                _vm._$g(114, "i")
+                                _vm._$g(116, "i")
                                   ? [
                                       _c(
                                         "v-uni-text",
                                         {
-                                          staticClass: _vm._$g(115, "sc"),
-                                          attrs: { _i: 115 }
+                                          staticClass: _vm._$g(117, "sc"),
+                                          attrs: { _i: 117 }
                                         },
                                         [_vm._v(".")]
                                       )
                                     ]
-                                  : [_vm._v(_vm._$g(116, "t0"))]
+                                  : [_vm._v(_vm._$g(118, "t0"))]
                               ],
                               2
                             )
@@ -21562,7 +21598,7 @@ exports = module.exports = __webpack_require__(/*! ./node_modules/css-loader/lib
 
 
 // module
-exports.push([module.i, ".scanPay {\n  padding-top: 100rpx;\n  padding-top: 140rpx;\n  font-size: 30rpx;\n  background: #f7f7f7;\n  height: 100%;\n}\n.scanPay .scanPay-content .title {\n  padding: 30rpx;\n}\n.scanPay .scanPay-content .money {\n  background: #fff;\n  padding: 0 30rpx;\n}\n.scanPay .scanPay-content .money .money-text {\n  padding: 20rpx 0;\n  border-bottom: 1px solid #e0e0e0;\n}\n.scanPay .scanPay-content .money .money-text .money-text-input {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  padding-top: 30rpx;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n}\n.scanPay .scanPay-content .money .money-text .money-text-input uni-text {\n  font-size: 50rpx;\n  font-weight: bold;\n}\n.scanPay .scanPay-content .money .money-text .money-text-input uni-input {\n  font-size: 40rpx;\n  text-indent: 20rpx;\n}\n.scanPay .scanPay-content .money .money-text-yhq {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  padding: 30rpx 0;\n  border-bottom: 1px solid #e0e0e0;\n}\n.scanPay .scanPay-content .money .money-text-yhq > uni-text {\n  width: 180rpx;\n}\n.scanPay .scanPay-content .money .money-text-yhq > uni-view {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n          flex: 1;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  color: #999;\n  font-size: 26rpx;\n}\n.scanPay .scanPay-content .money .money-text-dk .text {\n  padding: 30rpx 0;\n  border-bottom: 1px solid #e0e0e0;\n}\n.scanPay .scanPay-content .money .money-text-dk .radio-area {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  padding: 20rpx 0;\n}\n.scanPay .scanPay-content .money .money-text-dk .radio-area .radio {\n  margin-right: 120rpx;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  font-size: 26rpx;\n}\n.scanPay .payMode {\n  padding: 30rpx;\n  background: #fff;\n  margin-top: 20rpx;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n}\n.scanPay .setCouponHide {\n  display: none;\n}\n.scanPay .setCoupon {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(1, 1, 1, 0.5);\n}\n.scanPay .setCoupon .top {\n  height: 40%;\n}\n.scanPay .setCoupon .content {\n  height: 60%;\n  background: #fff;\n  font-size: 30rpx;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: column;\n          flex-direction: column;\n}\n.scanPay .setCoupon .content .content-top {\n  text-align: center;\n  padding: 20rpx 0;\n  position: relative;\n  margin-bottom: 30rpx;\n}\n.scanPay .setCoupon .content .content-top uni-text {\n  position: absolute;\n  right: 30rpx;\n  top: 20rpx;\n  font-size: 40rpx;\n  color: #666;\n}\n.scanPay .setCoupon .content .redpackge {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n          flex: 1;\n  padding-top: 30rpx;\n  overflow-y: auto;\n}\n.scanPay .setCoupon .content .redpackge .redpackge-title {\n  padding: 30rpx;\n}\n.scanPay .setCoupon .content .redpackge-item {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  padding: 0 30rpx;\n  border-radius: 20rpx;\n  height: 200rpx;\n  background: #fff;\n  width: 86%;\n  margin: 0 auto 20rpx;\n  box-shadow: 0 4rpx 20rpx #999;\n}\n.scanPay .setCoupon .content .redpackge-item .left {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-quan .price {\n  color: #FF5830;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-quan .price uni-text:first-child {\n  font-size: 40rpx;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-quan .price uni-text:nth-child(2) {\n  font-size: 70rpx;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-quan .price uni-view {\n  font-size: 28rpx;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-title {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n          flex: 1;\n  margin-left: 40rpx;\n  font-size: 28rpx;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-title uni-text:first-child {\n  font-weight: bold;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-title uni-view {\n  font-weight: bold;\n  margin: 10rpx 0;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-title uni-text:last-child {\n  color: #999;\n}\n.scanPay .setCoupon .content .redpackge-item .right {\n  color: #fff;\n  font-size: 28rpx;\n  padding: 10rpx 24rpx;\n  background: -webkit-linear-gradient(206deg, #ff8924 0%, #ff5a2d 100%);\n  background: linear-gradient(244deg, #ff8924 0%, #ff5a2d 100%);\n  border-radius: 40rpx;\n}\n.scanPay .payMaskHide {\n  display: none !important;\n}\n.scanPay .payMask {\n  position: fixed;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  left: 0;\n  background: rgba(1, 1, 1, 0.5);\n  z-index: 999999;\n  color: #000;\n}\n.scanPay .payMask .payMask-content {\n  width: 80%;\n  height: 500rpx;\n  background: #fff;\n  padding: 30rpx 30rpx 50rpx 30rpx;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  border-radius: 20rpx;\n}\n.scanPay .payMask .payMask-content .title {\n  position: relative;\n  text-align: center;\n  padding-bottom: 20rpx;\n  border-bottom: 1px solid #E6E6E6;\n}\n.scanPay .payMask .payMask-content .title uni-text {\n  position: absolute;\n  left: 0;\n  top: 10rpx;\n}\n.scanPay .payMask .payMask-content .item {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  height: 100rpx;\n  border-bottom: 1px solid #E6E6E6;\n}\n.scanPay .payMask .payMask-content .item .item-left {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n          justify-content: center;\n  font-size: 34rpx;\n}\n.scanPay .payMask .payMask-content .item .item-left uni-text {\n  font-size: 50rpx;\n  margin-right: 20rpx;\n}\n.scanPay .payPwdMaskHide {\n  display: none !important;\n}\n.scanPay .payPwdMask {\n  position: fixed;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  left: 0;\n  background: rgba(1, 1, 1, 0.5);\n  z-index: 999999;\n  color: #000;\n}\n.scanPay .payPwdMask .payPwdMask-content {\n  width: 80%;\n  height: 550rpx;\n  background: #fff;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  border-radius: 20rpx;\n  font-size: 37rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .title {\n  padding: 20rpx 0;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n          justify-content: center;\n  border-bottom: 1rpx solid #E6E6E6;\n}\n.scanPay .payPwdMask .payPwdMask-content .title uni-text {\n  position: absolute;\n  top: 20rpx;\n  left: 20rpx;\n  color: #E6E6E6;\n  font-size: 50rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .content {\n  text-align: center;\n  padding: 30rpx 0;\n  border-bottom: 1rpx solid #E6E6E6;\n}\n.scanPay .payPwdMask .payPwdMask-content .content uni-view {\n  font-weight: bold;\n  font-size: 57rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput {\n  padding: 0 30rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .mode {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  font-size: 30rpx;\n  color: #666;\n  padding: 20rpx 0;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .mode .modeRight uni-text {\n  margin-left: 10rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .flex-box {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n          flex-wrap: wrap;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n          justify-content: center;\n  margin-top: 40rpx;\n  height: 100rpx;\n  position: relative;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .item {\n  position: relative;\n  width: 90upx;\n  height: 90upx;\n  font-size: 30upx;\n  font-weight: bold;\n  color: #333333;\n  line-height: 90upx;\n  text-align: center;\n  box-sizing: border-box;\n  border: 1px solid #CCCCCC;\n  border-right: 0;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .item:last-child {\n  border-right: 1px solid #ccc;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .active {\n  border-color: #ff4b4b;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .active .line {\n  display: block;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .line {\n  display: none;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  width: 2upx;\n  height: 40upx;\n  background: #ff4b4b;\n  -webkit-animation: twinkling 1s infinite ease;\n          animation: twinkling 1s infinite ease;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .hide-input {\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 200%;\n  height: 100%;\n  text-align: left;\n  z-index: 9;\n  opacity: 1;\n}\n@-webkit-keyframes twinkling {\n0% {\n    opacity: 0.2;\n}\n50% {\n    opacity: 0.5;\n}\n100% {\n    opacity: 0.2;\n}\n}\n@keyframes twinkling {\n0% {\n    opacity: 0.2;\n}\n50% {\n    opacity: 0.5;\n}\n100% {\n    opacity: 0.2;\n}\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .dot {\n  font-size: 80upx;\n  line-height: 40upx;\n}\n", ""]);
+exports.push([module.i, ".scanPay {\n  padding-top: 100rpx;\n  padding-top: 140rpx;\n  font-size: 30rpx;\n  background: #f7f7f7;\n  height: 100%;\n  color: #333;\n}\n.scanPay .scanPay-content .title {\n  padding: 30rpx;\n}\n.scanPay .scanPay-content .money {\n  background: #fff;\n  padding: 0 30rpx;\n}\n.scanPay .scanPay-content .money .money-text {\n  padding: 20rpx 0;\n  border-bottom: 1px solid #e0e0e0;\n}\n.scanPay .scanPay-content .money .money-text .money-text-input {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  padding-top: 30rpx;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n}\n.scanPay .scanPay-content .money .money-text .money-text-input uni-text {\n  font-size: 50rpx;\n  font-weight: bold;\n}\n.scanPay .scanPay-content .money .money-text .money-text-input uni-input {\n  font-size: 40rpx;\n  text-indent: 20rpx;\n}\n.scanPay .scanPay-content .money .money-text-yhq {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  padding: 30rpx 0;\n  border-bottom: 1px solid #e0e0e0;\n}\n.scanPay .scanPay-content .money .money-text-yhq > uni-text {\n  width: 180rpx;\n}\n.scanPay .scanPay-content .money .money-text-yhq > uni-view {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n          flex: 1;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  color: #999;\n  font-size: 26rpx;\n}\n.scanPay .scanPay-content .money .money-text-dk .text {\n  padding: 30rpx 0;\n  border-bottom: 1px solid #e0e0e0;\n}\n.scanPay .scanPay-content .money .money-text-dk .radio-area {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  padding: 20rpx 0;\n}\n.scanPay .scanPay-content .money .money-text-dk .radio-area .radio {\n  margin-right: 120rpx;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  font-size: 26rpx;\n}\n.scanPay .payMode {\n  height: 100rpx;\n  background: #fff;\n  margin-top: 20rpx;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n}\n.scanPay .payMode > uni-text {\n  margin-left: 30rpx;\n  color: #666;\n}\n.scanPay .payMode .right {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  height: 100rpx;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  font-weight: bold;\n  color: #333;\n}\n.scanPay .payMode .right uni-view {\n  margin-left: 30rpx;\n  height: 100rpx;\n  width: 150rpx;\n  line-height: 100rpx;\n  font-weight: bold;\n  font-size: 36rpx;\n  background: #FF6B37;\n  text-align: center;\n  color: #fff;\n}\n.scanPay .setCouponHide {\n  display: none;\n}\n.scanPay .setCoupon {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(1, 1, 1, 0.5);\n}\n.scanPay .setCoupon .top {\n  height: 40%;\n}\n.scanPay .setCoupon .content {\n  height: 60%;\n  background: #fff;\n  font-size: 30rpx;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: column;\n          flex-direction: column;\n}\n.scanPay .setCoupon .content .content-top {\n  text-align: center;\n  padding: 20rpx 0;\n  position: relative;\n  margin-bottom: 30rpx;\n}\n.scanPay .setCoupon .content .content-top uni-text {\n  position: absolute;\n  right: 30rpx;\n  top: 20rpx;\n  font-size: 40rpx;\n  color: #666;\n}\n.scanPay .setCoupon .content .redpackge {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n          flex: 1;\n  padding-top: 30rpx;\n  overflow-y: auto;\n}\n.scanPay .setCoupon .content .redpackge .redpackge-title {\n  padding: 30rpx;\n}\n.scanPay .setCoupon .content .redpackge-item {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  padding: 0 30rpx;\n  border-radius: 20rpx;\n  height: 200rpx;\n  background: #fff;\n  width: 86%;\n  margin: 0 auto 20rpx;\n  box-shadow: 0 4rpx 20rpx #999;\n}\n.scanPay .setCoupon .content .redpackge-item .left {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-quan .price {\n  color: #FF5830;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-quan .price uni-text:first-child {\n  font-size: 40rpx;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-quan .price uni-text:nth-child(2) {\n  font-size: 70rpx;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-quan .price uni-view {\n  font-size: 28rpx;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-title {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n          flex: 1;\n  margin-left: 40rpx;\n  font-size: 28rpx;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-title uni-text:first-child {\n  font-weight: bold;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-title uni-view {\n  font-weight: bold;\n  margin: 10rpx 0;\n}\n.scanPay .setCoupon .content .redpackge-item .left .left-title uni-text:last-child {\n  color: #999;\n}\n.scanPay .setCoupon .content .redpackge-item .right {\n  color: #fff;\n  font-size: 28rpx;\n  padding: 10rpx 24rpx;\n  background: -webkit-linear-gradient(206deg, #ff8924 0%, #ff5a2d 100%);\n  background: linear-gradient(244deg, #ff8924 0%, #ff5a2d 100%);\n  border-radius: 40rpx;\n}\n.scanPay .payMaskHide {\n  display: none !important;\n}\n.scanPay .payMask {\n  position: fixed;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  left: 0;\n  background: rgba(1, 1, 1, 0.5);\n  z-index: 999999;\n  color: #000;\n}\n.scanPay .payMask .payMask-content {\n  width: 80%;\n  height: 500rpx;\n  background: #fff;\n  padding: 30rpx 30rpx 50rpx 30rpx;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  border-radius: 20rpx;\n}\n.scanPay .payMask .payMask-content .title {\n  position: relative;\n  text-align: center;\n  padding-bottom: 20rpx;\n  border-bottom: 1px solid #E6E6E6;\n}\n.scanPay .payMask .payMask-content .title uni-text {\n  position: absolute;\n  left: 0;\n  top: 10rpx;\n}\n.scanPay .payMask .payMask-content .item {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  height: 100rpx;\n  border-bottom: 1px solid #E6E6E6;\n}\n.scanPay .payMask .payMask-content .item .item-left {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n          justify-content: center;\n  font-size: 34rpx;\n}\n.scanPay .payMask .payMask-content .item .item-left uni-text {\n  font-size: 50rpx;\n  margin-right: 20rpx;\n}\n.scanPay .payPwdMaskHide {\n  display: none !important;\n}\n.scanPay .payPwdMask {\n  position: fixed;\n  height: 100%;\n  width: 100%;\n  top: 0;\n  left: 0;\n  background: rgba(1, 1, 1, 0.5);\n  z-index: 999999;\n  color: #000;\n}\n.scanPay .payPwdMask .payPwdMask-content {\n  width: 80%;\n  height: 550rpx;\n  background: #fff;\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  margin: auto;\n  border-radius: 20rpx;\n  font-size: 37rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .title {\n  padding: 20rpx 0;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n          align-items: center;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n          justify-content: center;\n  border-bottom: 1rpx solid #E6E6E6;\n}\n.scanPay .payPwdMask .payPwdMask-content .title uni-text {\n  position: absolute;\n  top: 20rpx;\n  left: 20rpx;\n  color: #E6E6E6;\n  font-size: 50rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .content {\n  text-align: center;\n  padding: 30rpx 0;\n  border-bottom: 1rpx solid #E6E6E6;\n}\n.scanPay .payPwdMask .payPwdMask-content .content uni-view {\n  font-weight: bold;\n  font-size: 57rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput {\n  padding: 0 30rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .mode {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n          justify-content: space-between;\n  font-size: 30rpx;\n  color: #666;\n  padding: 20rpx 0;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .mode .modeRight uni-text {\n  margin-left: 10rpx;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .flex-box {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n          flex-wrap: wrap;\n  -webkit-box-pack: center;\n  -webkit-justify-content: center;\n          justify-content: center;\n  margin-top: 40rpx;\n  height: 100rpx;\n  position: relative;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .item {\n  position: relative;\n  width: 90upx;\n  height: 90upx;\n  font-size: 30upx;\n  font-weight: bold;\n  color: #333333;\n  line-height: 90upx;\n  text-align: center;\n  box-sizing: border-box;\n  border: 1px solid #CCCCCC;\n  border-right: 0;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .item:last-child {\n  border-right: 1px solid #ccc;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .active {\n  border-color: #ff4b4b;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .active .line {\n  display: block;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .line {\n  display: none;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%);\n  width: 2upx;\n  height: 40upx;\n  background: #ff4b4b;\n  -webkit-animation: twinkling 1s infinite ease;\n          animation: twinkling 1s infinite ease;\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .hide-input {\n  position: absolute;\n  top: 0;\n  left: -100%;\n  width: 200%;\n  height: 100%;\n  text-align: left;\n  z-index: 9;\n  opacity: 1;\n}\n@-webkit-keyframes twinkling {\n0% {\n    opacity: 0.2;\n}\n50% {\n    opacity: 0.5;\n}\n100% {\n    opacity: 0.2;\n}\n}\n@keyframes twinkling {\n0% {\n    opacity: 0.2;\n}\n50% {\n    opacity: 0.5;\n}\n100% {\n    opacity: 0.2;\n}\n}\n.scanPay .payPwdMask .payPwdMask-content .pwdinput .dot {\n  font-size: 80upx;\n  line-height: 40upx;\n}\n", ""]);
 
 // exports
 
@@ -21615,7 +21651,7 @@ exports = module.exports = __webpack_require__(/*! ./node_modules/css-loader/lib
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*每个页面公共css */\n@font-face {\n  font-family: 'iconfont';  /* project id 1624632 */\n  src: url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.eot');\n  src: url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.eot?#iefix') format('embedded-opentype'),\n  url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.woff2') format('woff2'),\n  url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.woff') format('woff'),\n  url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.ttf') format('truetype'),\n  url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.svg#iconfont') format('svg');\n}\n.iconfont {\n  font-family: \"iconfont\" !important;\n  font-size: 16px;\n  font-style: normal;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-jia1:before {\n  content: \"\\E60D\";\n}\n.icon-jian1:before {\n  content: \"\\E74B\";\n}\n.icon-qingkongshanchu:before {\n  content: \"\\E66C\";\n}\n.icon-gengduo:before {\n  content: \"\\E86D\";\n}\n.icon-tianjia:before {\n  content: \"\\E64D\";\n}\n.icon-xiangji:before {\n  content: \"\\E60C\";\n}\n.icon-htmal5icon12:before {\n  content: \"\\E634\";\n}\n.icon-shangpinguanli:before {\n  content: \"\\E65B\";\n}\n.icon-dianpu:before {\n  content: \"\\E655\";\n}\n.icon-dingdanguanli:before {\n  content: \"\\E636\";\n}\n.icon-dingdanguanli1:before {\n  content: \"\\E617\";\n}\n.icon-gouwucheman:before {\n  content: \"\\E601\";\n}\n.icon-youhuiquan:before {\n  content: \"\\E8C8\";\n}\n.icon-huore-s:before {\n  content: \"\\E633\";\n}\n.icon-yiliaohangyedeICON-:before {\n  content: \"\\E626\";\n}\n.icon-dianhua:before {\n  content: \"\\E609\";\n}\n.icon-dian:before {\n  content: \"\\E608\";\n}\n.icon-biaoqing-xue:before {\n  content: \"\\E632\";\n}\n.icon-bangdingshezhiyinxingqiabangding:before {\n  content: \"\\E625\";\n}\n.icon-zhifubao:before {\n  content: \"\\E65F\";\n}\n.icon-chaping1:before {\n  content: \"\\E63F\";\n}\n.icon-daxiao:before {\n  content: \"\\E63E\";\n}\n.icon-pj_yiban:before {\n  content: \"\\E600\";\n}\n.icon-xiaolian:before {\n  content: \"\\E7ED\";\n}\n.icon-bofang:before {\n  content: \"\\E605\";\n}\n.icon-shanchu:before {\n  content: \"\\E643\";\n}\n.icon-qq:before {\n  content: \"\\E60B\";\n}\n.icon-weibo:before {\n  content: \"\\E62F\";\n}\n.icon-weixin:before {\n  content: \"\\E631\";\n}\n.icon-tubiaolunkuo-:before {\n  content: \"\\E615\";\n}\n.icon-xingxing:before {\n  content: \"\\E624\";\n}\n.icon-zuishao:before {\n  content: \"\\E61F\";\n}\n.icon-shouzhimingxicaifuhongbaoyue:before {\n  content: \"\\E78B\";\n}\n.icon-lingdang-xianxing:before {\n  content: \"\\E8C0\";\n}\n.icon-daohanggouwuche:before {\n  content: \"\\E607\";\n}\n.icon-755danzi:before {\n  content: \"\\E616\";\n}\n.icon-gerenzhongxin:before {\n  content: \"\\E71D\";\n}\n.icon-shouye:before {\n  content: \"\\E6DA\";\n}\n.icon-dingdanmian:before {\n  content: \"\\E64F\";\n}\n.icon-aixin:before {\n  content: \"\\E602\";\n}\n.icon-dianpuyulan:before {\n  content: \"\\E651\";\n}\n.icon-shezhi:before {\n  content: \"\\E688\";\n}\n.icon-pingjia-tianchong:before {\n  content: \"\\E61B\";\n}\n.icon-shangpu:before {\n  content: \"\\E630\";\n}\n.icon-zhinanzhen:before {\n  content: \"\\E644\";\n}\n.icon-weibiaoti--:before {\n  content: \"\\E61C\";\n}\n.icon-w_dengji:before {\n  content: \"\\E668\";\n}\n.icon-jia:before {\n  content: \"\\E659\";\n}\n.icon-jian:before {\n  content: \"\\E65A\";\n}\n.icon-kefu:before {\n  content: \"\\E63A\";\n}\n.icon-yinlianglabashengyin:before {\n  content: \"\\E604\";\n}\n.icon-fenxiang:before {\n  content: \"\\E603\";\n}\n.icon-zuojiantou:before {\n  content: \"\\E641\";\n}\n.icon-youjiantou:before {\n  content: \"\\E629\";\n}\n.icon-jiantou-xia:before {\n  content: \"\\E719\";\n}\n.icon-sousuo:before {\n  content: \"\\E606\";\n}\n.icon-saomiao:before {\n  content: \"\\E671\";\n}\n.icon-dingwei:before {\n  content: \"\\E60A\";\n}\nuni-page-head{\n\tdisplay: none;\n}\nbody{\n\theight: 100%;\n\tfont-family: PingFangSC-Semibold, PingFang SC;\n}\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*每个页面公共css */\n@font-face {\r\n  font-family: 'iconfont';  /* project id 1624632 */\r\n  src: url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.eot');\r\n  src: url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.eot?#iefix') format('embedded-opentype'),\r\n  url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.woff2') format('woff2'),\r\n  url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.woff') format('woff'),\r\n  url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.ttf') format('truetype'),\r\n  url('https://at.alicdn.com/t/font_1624632_mceyczey9ts.svg#iconfont') format('svg');\n}\n.iconfont {\r\n  font-family: \"iconfont\" !important;\r\n  font-size: 16px;\r\n  font-style: normal;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\n}\n.icon-jia1:before {\r\n  content: \"\\E60D\";\n}\n.icon-jian1:before {\r\n  content: \"\\E74B\";\n}\n.icon-qingkongshanchu:before {\r\n  content: \"\\E66C\";\n}\n.icon-gengduo:before {\r\n  content: \"\\E86D\";\n}\n.icon-tianjia:before {\r\n  content: \"\\E64D\";\n}\n.icon-xiangji:before {\r\n  content: \"\\E60C\";\n}\n.icon-htmal5icon12:before {\r\n  content: \"\\E634\";\n}\n.icon-shangpinguanli:before {\r\n  content: \"\\E65B\";\n}\n.icon-dianpu:before {\r\n  content: \"\\E655\";\n}\n.icon-dingdanguanli:before {\r\n  content: \"\\E636\";\n}\n.icon-dingdanguanli1:before {\r\n  content: \"\\E617\";\n}\n.icon-gouwucheman:before {\r\n  content: \"\\E601\";\n}\n.icon-youhuiquan:before {\r\n  content: \"\\E8C8\";\n}\n.icon-huore-s:before {\r\n  content: \"\\E633\";\n}\n.icon-yiliaohangyedeICON-:before {\r\n  content: \"\\E626\";\n}\n.icon-dianhua:before {\r\n  content: \"\\E609\";\n}\n.icon-dian:before {\r\n  content: \"\\E608\";\n}\n.icon-biaoqing-xue:before {\r\n  content: \"\\E632\";\n}\n.icon-bangdingshezhiyinxingqiabangding:before {\r\n  content: \"\\E625\";\n}\n.icon-zhifubao:before {\r\n  content: \"\\E65F\";\n}\n.icon-chaping1:before {\r\n  content: \"\\E63F\";\n}\n.icon-daxiao:before {\r\n  content: \"\\E63E\";\n}\n.icon-pj_yiban:before {\r\n  content: \"\\E600\";\n}\n.icon-xiaolian:before {\r\n  content: \"\\E7ED\";\n}\n.icon-bofang:before {\r\n  content: \"\\E605\";\n}\n.icon-shanchu:before {\r\n  content: \"\\E643\";\n}\n.icon-qq:before {\r\n  content: \"\\E60B\";\n}\n.icon-weibo:before {\r\n  content: \"\\E62F\";\n}\n.icon-weixin:before {\r\n  content: \"\\E631\";\n}\n.icon-tubiaolunkuo-:before {\r\n  content: \"\\E615\";\n}\n.icon-xingxing:before {\r\n  content: \"\\E624\";\n}\n.icon-zuishao:before {\r\n  content: \"\\E61F\";\n}\n.icon-shouzhimingxicaifuhongbaoyue:before {\r\n  content: \"\\E78B\";\n}\n.icon-lingdang-xianxing:before {\r\n  content: \"\\E8C0\";\n}\n.icon-daohanggouwuche:before {\r\n  content: \"\\E607\";\n}\n.icon-755danzi:before {\r\n  content: \"\\E616\";\n}\n.icon-gerenzhongxin:before {\r\n  content: \"\\E71D\";\n}\n.icon-shouye:before {\r\n  content: \"\\E6DA\";\n}\n.icon-dingdanmian:before {\r\n  content: \"\\E64F\";\n}\n.icon-aixin:before {\r\n  content: \"\\E602\";\n}\n.icon-dianpuyulan:before {\r\n  content: \"\\E651\";\n}\n.icon-shezhi:before {\r\n  content: \"\\E688\";\n}\n.icon-pingjia-tianchong:before {\r\n  content: \"\\E61B\";\n}\n.icon-shangpu:before {\r\n  content: \"\\E630\";\n}\n.icon-zhinanzhen:before {\r\n  content: \"\\E644\";\n}\n.icon-weibiaoti--:before {\r\n  content: \"\\E61C\";\n}\n.icon-w_dengji:before {\r\n  content: \"\\E668\";\n}\n.icon-jia:before {\r\n  content: \"\\E659\";\n}\n.icon-jian:before {\r\n  content: \"\\E65A\";\n}\n.icon-kefu:before {\r\n  content: \"\\E63A\";\n}\n.icon-yinlianglabashengyin:before {\r\n  content: \"\\E604\";\n}\n.icon-fenxiang:before {\r\n  content: \"\\E603\";\n}\n.icon-zuojiantou:before {\r\n  content: \"\\E641\";\n}\n.icon-youjiantou:before {\r\n  content: \"\\E629\";\n}\n.icon-jiantou-xia:before {\r\n  content: \"\\E719\";\n}\n.icon-sousuo:before {\r\n  content: \"\\E606\";\n}\n.icon-saomiao:before {\r\n  content: \"\\E671\";\n}\n.icon-dingwei:before {\r\n  content: \"\\E60A\";\n}\nuni-page-head{\n\tdisplay: none;\n}\nbody{\n\theight: 100%;\n\tfont-family: PingFangSC-Semibold, PingFang SC;\n}\n", ""]);
 
 // exports
 

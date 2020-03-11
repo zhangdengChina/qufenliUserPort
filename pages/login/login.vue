@@ -55,8 +55,11 @@
 
 <script>
 	// 引入api接口
-	import {login} from "@/common/apis.js";
-	
+	import {
+		login,
+		wxLogin
+	} from "@/common/apis.js";
+
 	export default {
 		data() {
 			return {
@@ -102,15 +105,16 @@
 
 			// 前往首页
 			goIndex() {
-				if (this.phone == 11111111111 && this.pwd == 888888) {
+				// if (this.phone == 11111111111 && this.pwd == 888888) {
 					this.saveObj = {
 						PHONE: this.phone,
-						PASSWORD: this.pwd
+						PASSWORD: this.pwd,
+						openId:getApp().globalData.openid
 					}
 					// 登录请求
-					login(this.saveObj).then(res=>{
+					login(this.saveObj).then(res => {
 						console.log(res.returnMsg.status);
-						if(res.returnMsg.status=='00'){
+						if (res.returnMsg.status == '00') {
 							uni.getStorage({
 								key: 'saveStata',
 								success: (res) => {
@@ -128,34 +132,32 @@
 									this.rememberPwdHide = false;
 								}
 							})
-						}else if(res.returnMsg.status=='01'){
+						} else if (res.returnMsg.status == '01') {
 							uni.showToast({
-								title:'账号不存在!',
-								icon:'none'
+								title: '账号不存在!',
+								icon: 'none'
+							})
+						} else if (res.returnMsg.status == '02') {
+							uni.showToast({
+								title: '密码错误!',
+								icon: 'none'
+							})
+						} else if (res.returnMsg.status == '03') {
+							uni.showToast({
+								title: '不合法注册!',
+								icon: 'none'
 							})
 						}
-						else if(res.returnMsg.status=='02'){
-							uni.showToast({
-								title:'密码错误!',
-								icon:'none'
-							})
-						}
-						else if(res.returnMsg.status=='03'){
-							uni.showToast({
-								title:'不合法注册!',
-								icon:'none'
-							})
-						}
-					}).catch(err=>{
+					}).catch(err => {
 						console.log('请核对账号密码')
 					})
 
-				} else {
-					uni.showToast({
-						title: '登陆失败，请核对后再登录！',
-						icon: "none"
-					});
-				}
+				// } else {
+				// 	uni.showToast({
+				// 		title: '登陆失败，请核对后再登录！',
+				// 		icon: "none"
+				// 	});
+				// }
 			},
 
 			// 忘记密码
@@ -225,17 +227,25 @@
 							uni.login({
 								provider: 'weixin',
 								success: (loginRes) => {
-									console.log(JSON.stringify(loginRes));
-
-									// 如果已绑定手机跳转至首页
-									uni.reLaunch({
-										url:'../index/index'
+									wxLogin({"openId":loginRes.authResult.openid,"code":''}).then(res=>{
+										if (res.returnMsg.status == '00') {
+											// 如果已绑定手机跳转至首页
+											uni.reLaunch({
+												url: '../index/index'
+											})
+										}else if (res.returnMsg.status == '01') {
+											getApp().globalData.openid = loginRes.authResult.openid;
+											// 否则跳转注册
+											uni.navigateTo({
+												url: '../register/register'
+											})
+										} 
+									}).catch(err=>{
+										uni.showToast({
+											title:'登录失败！',
+											icon:'none'
+										})
 									})
-									// 否则进入绑定手机号
-									uni.navigateTo({
-										url: '../bankphone/bankphone'
-									})
-
 								},
 								fail: () => {
 									uni.showToast({
@@ -263,7 +273,7 @@
 					// 你自己的业务逻辑
 					alert(this.code);
 					uni.reLaunch({
-						url:'../index/index'
+						url: '../index/index'
 					})
 				}
 			},
