@@ -1,0 +1,1 @@
+<view class="common-tabbar"><block wx:for="{{tabList}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><view data-event-opts="{{[['tap',[['goPage',['$0'],[[['tabList','id',item.id,'id']]]]]]]}}" class="{{['item',active==item.id?'active':'']}}" bindtap="__e"><text class="{{['iconfont',item.icon]}}"></text><view>{{item.text}}</view></view></block></view>

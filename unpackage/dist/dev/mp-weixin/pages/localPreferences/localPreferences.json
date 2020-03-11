@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "uni-rate": "/components/uni-rate/uni-rate",
+    "common-header": "/components/common-header/common-header",
+    "special-banner": "/components/specialBanner",
+    "tabbar": "/components/common-tabbar/common-tabbar"
+  }
+}

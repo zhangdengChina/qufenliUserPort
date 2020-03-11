@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "testCode": "/components/testCode/testCode",
+    "tabbar": "/components/common-tabbar/common-tabbar",
+    "test-code": "/components/testCode/testCode"
+  }
+}

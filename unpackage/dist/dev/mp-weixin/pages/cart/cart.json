@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "购物车",
+  "usingComponents": {
+    "common-header": "/components/common-header/common-header",
+    "tabbar": "/components/common-tabbar/common-tabbar"
+  }
+}

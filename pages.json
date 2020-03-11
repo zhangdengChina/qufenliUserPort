@@ -1,0 +1,244 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/login/login",
+		    "style" : {}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+		    "path" : "pages/register/register",
+		    "style" : {}
+		},
+		{
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/personal/personal",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+	    ,{
+            "path" : "components/common-header/common-header",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/setting/setting",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/settlement/settlement",
+            "style" : {}
+        }
+        ,{
+            "path" : "components/common-tabbar/common-tabbar",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/myBalance/myBalance",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/myPentacle/myPentacle",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/myConsume/myConsume",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/changePhone/changePhone",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/loginPassword/loginPassword",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/transactionPassword/transactionPassword",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/personalData/personalData",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/certification/certification",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/myOrder/myOrder",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/oraderDetails/oraderDetails",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/myEvaluate/myEvaluate",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/evaluate/evaluate",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/collectShop/collectShop",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/merchantEntry/merchantEntry",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/myAddress/myAddress",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/newAddress/newAddress",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/myCard/myCard",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/bindAlipay/bindAlipay",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/bindWeixin/bindWeixin",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/bindBankCard/bindBankCard",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/addBankCard/addBankCard",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/localPreferences/localPreferences",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/shopPage/shopPage",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/shopDetails/shopDetails",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/preferencesPage/preferencesPage",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/goodsDetails/goodsDetails",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/passwordback/passwordback",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/grade/grade",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/xbExchange/xbExchange",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/address/address",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/notice/notice",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/setTransactionPwd/setTransactionPwd",
+            "style" : {}
+        }
+        
+        ,{
+            "path" : "pages/forgetPwd/forgetPwd",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/about/about",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/userAgreement/userAgreement",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/bankphone/bankphone",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/scanPay/scanPay",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle":"custom",
+		// "app-plus":{"titleNView":false},
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "趣分利用户端",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+	// ,"tabBar": {
+	// 	"color": "#333333",
+	// 	"selectedColor": "#333333",
+	// 	"borderStyle": "black",
+	// 	"backgroundColor": "#ffffff",
+	// 	"list": [{
+	// 			"pagePath": "pages/index/index",
+	// 			"iconPath": "static/images/tab01.png",
+	// 			"selectedIconPath": "static/images/tab01_1.png",
+	// 			"text": "首页"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/news/news",
+	// 			"iconPath": "static/images/tab02.png",
+	// 			"selectedIconPath": "static/images/tab02_02.png",
+	// 			"text": "消息"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/cart/cart",
+	// 			"iconPath": "static/images/tab03.png",
+	// 			"selectedIconPath": "static/images/tab03_3.png",
+	// 			"text": "购物车"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/personal/personal",
+	// 			"iconPath": "static/images/tab04.png",
+	// 			"selectedIconPath": "static/images/tab04_4.png",
+	// 			"text": "个人中心"
+	// 		}
+	// 	]
+	// }
+}

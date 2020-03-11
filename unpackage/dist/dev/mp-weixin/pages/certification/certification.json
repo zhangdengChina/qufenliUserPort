@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "common-header": "/components/common-header/common-header",
+    "tabbar": "/components/common-tabbar/common-tabbar"
+  }
+}

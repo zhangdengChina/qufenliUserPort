@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "pickerAddress": "/components/pickerAddress/pickerAddress",
+    "tabbar": "/components/common-tabbar/common-tabbar",
+    "picker-address": "/components/pickerAddress/pickerAddress"
+  }
+}

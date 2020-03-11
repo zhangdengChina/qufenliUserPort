@@ -1,0 +1,1 @@
+<view class="userAgreem"><common-header vue-id="1" headerTitl="用户须知" xingHide="true" lingHide="true" fenxiangHide="true" bind:__l="__l"></common-header><view class="content"><rich-text nodes="{{htmlText}}"></rich-text></view></view>

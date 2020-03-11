@@ -1,0 +1,27 @@
+.common-tabbar {
+  color: #333;
+  height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.common-tabbar .active text {
+  color: #f5671f;
+}
+.common-tabbar .item text {
+  font-size: 48rpx;
+}
+.common-tabbar .item view {
+  font-size: 20rpx;
+}
+
